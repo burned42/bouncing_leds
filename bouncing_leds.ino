@@ -44,7 +44,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("test");
   for (int i = 0; i < BALL_COUNT; i++) {
     float v = balls[i].v;
     float h = balls[i].h;
