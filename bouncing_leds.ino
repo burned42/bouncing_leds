@@ -8,7 +8,7 @@
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(PIXEL_COUNT, PIN, NEO_GRB + NEO_KHZ800);
 
 #define TD 0.075
-#define BALL_COUNT 5
+#define BALL_COUNT 2
 #define MAX_H (PIXEL_COUNT - 1)
 
 #define G 9.8
@@ -65,9 +65,9 @@ void loop() {
 
     if ((int) v == 0 && (int) h == 0) {
       v = MAX_V * (random(6) + 95) / 100;
-      balls[i].red = random(256);
-      balls[i].green = random(256);
-      balls[i].blue = random(256);
+      balls[i].red = random(128);
+      balls[i].green = random(128);
+      balls[i].blue = random(128);
     }
 
     balls[i].v = v;
@@ -84,4 +84,3 @@ void loop() {
 
   delay(5);
 }
-
